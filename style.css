@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+html{
+    height: 100%;
+    background-image: radial-gradient(circle, white,whitesmoke);
+}
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    height: 470px;
+    width: 570px;
+    background-color: rgb(114, 228, 228);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgb(47, 47, 47);
+    position: relative;
+}
+#score{
+    position: absolute;
+    width: 80px;
+    left: 80%;
+    margin: 15px 12px;
+    padding: 7px;
+    background-color: rgb(252, 252, 160);
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px black;
+    display: none;
+}
+#correct{
+    background-color: green;
+    display: none;
+}
+#wrong{
+    background-color: red;
+    display: none;
+}
+.correct_wrong{
+    position: absolute;
+    left: 39%;
+    margin: 12px;
+    padding: 7px;
+    border-radius: 3px;
+    color: white;
+}
+#question{
+    background-color: rgb(143, 170, 214);
+    box-shadow: 0px 3px 2px 0px rgb(47, 47, 47);
+    height: 170px;
+    width: 450px;
+    position: absolute;
+    top: 12%;
+    left: 8.5%;
+    margin: 12px;
+    padding: 20px 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 100px;
+}
+#correctAnswer{
+    width: 450px;
+    position: absolute;
+    bottom: 36.5%;
+    left: 8.5%;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgb(141, 77, 200);
+    box-shadow: 0px 2px 2px 0px rgb(47, 47, 47);
+    color: white;
+}
+#answers{
+    width: 450px;
+    position: absolute;
+    bottom: 17%;
+    left: 8.5%;
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.answers{
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 0px 3px 2px 0px rgb(47, 47, 47);
+    text-align: center;
+    line-height: 55px;
+    font-size: 22px;
+}
+.answers:hover{
+    background-color: rgb(204, 75, 230);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px;
+}
+#startgame{
+    position: absolute;
+    left: 39%;
+    bottom: 4.5%;
+    margin: 12px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    background-color: rgb(255, 168, 62);
+    box-shadow: 0px 2px 1px 0px rgb(47, 47, 47);
+}
+#startgame:hover{
+    cursor: pointer;
+    background-color: rgb(74, 0, 0);
+    color: white;
+}
+#timeremaining{
+    position: absolute;
+    width: 150px;
+    bottom: 4%;
+    left: 69%;
+    font-size: 13px;
+    margin:15px;
+    padding: 7px;
+    color: rgb(185, 0, 0);
+    display: none;
+}
+#remainsec{
+    font-size: 13px;
+}
+#gameOver{
+    position: absolute;
+    top: 15%;
+    left: 2.5%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 50px;
+    width: 520px;
+    height:270px;
+    background-color: rgb(253, 80, 36);
+    color: rgb(254, 219, 219);
+    line-height: 2;
+    display: none;
+}
+#totalscore{
+    font-size: 50px;
+}
